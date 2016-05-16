@@ -77,60 +77,11 @@ $("#Ajax").click(function(){
 		 margin: "235px auto"
 	 }, 500 );
 
-});
+
 			 /*$.post("https://andreihelo-restful-api.herokuapp.com/students", {registration_number: 259605,name: "Kitaro",last_name: "Gegege",status: "°o°"}, "json", function(result){
 		         $("span").text(JSON.stringify(result))
 		     });
 		 	*/
-$("aceptar").click(function() {
-	var matricula = $('input[id=matricula]').val();
- var nombre = $('input[id=nombre]').val();
- var apellido = $('input[id=apellido]').val();
- var status = $( '#status option:selected' ).val();
-	var mensaje = "Error(es) destectado(s) \n";
-	 var ban=0;
-
-if((matricula.length === 0)||(matricula.length < 6)){
-		alert("No ingresó la matrícula");
-		if((matricula.length > 6)){
-		 alert("La matrícula debe ser de 6 dígitos.");
-		}
-
- }
- if(nombre.length === 0){
-	 mensaje = mensaje + "- Falta Nombre\n";
- }
- if(apellido.length === 0){
-	 mensaje = mensaje + "- Falta Apellido\n";
-	 }
-	 if(status  === $('#status option:first').val()){
-		mensaje = mensaje + "- Falta status\n";
-			 ban++;
-	 }
-
-	 if(mensaje.length > 26){
-			 alert(mensaje);
-	 }
-
-if((matricula.length > 0)&&(nombre.length > 0)&&(apellido.length > 0)&&(ban === 0)&&(matricula.length === 6)){
-
-		var estudiante = {
-		 "registration_number": matricula,
-		 "name": mombre,
-		 "last_name": apellido,
-		 "status": status
-		};
-
-		$.ajax({
-			 url: "https://andreihelo-restful-api.herokuapp.com/students",
-			 method: "POST",
-			 data: estudiante,
-			 success: function(result, status, xhr) {
-				 alert("Registrado con exito");
-				 abrir();
-				 //refrescar();
-		}
-});
 	 });
 
 	 $("#cerrar").click(function(){
