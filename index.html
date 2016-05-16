@@ -1,51 +1,43 @@
 <!DOCTYPE HTML>
 <html>
 	<meta charset= "utf-8">
+	<link rel="stylesheet" href="style.css"/>
 	<title>T13</title>
 	</head>
 	<body>
 
-	<main>
-
 	<h1>Página personal de Valeria</h1>
 
 	<p>Esto es un párrafo</p>
-	<ul>
-					<li><i>No debe haber espacios en blanco</i></li>
-					<li><i>La matrícula debe ser un número</i></li>
-					<li><i>La matrícula debe ser de 6 dígitos</i></li>
-			</ul>
-	<p>Matricula</p>
-			<input name="Matricula" placeholder="Matricula">
-			<p>Nombre</p>
-			<input name="Nombre" placeholder="Nombre">
-			<p>Apellido</p>
-			<input name="Apellido" placeholder="Apellido">
-			<p>Status</p>
-			<select id="status" >
+			<div id="cuadros">
+			<div id="mostrar">
+			<div type="button" id="cerrar"><i class="fa fa-times" aria-hidden="true">x</i></div>
+			<p>Matrícula: <input type="number" id="matricula" placeholder="No lugar vacío"></p>
+			<p>Nombre: <input type="text" id="nombre" placeholder="No Nombre vacío"></p>
+			<p>Apellido: <input type="text" id="apellido" placeholder="No Apellido vacío"></p>
+			<p>Status <select id="status" >
 			 <option value="vacio" selected="selected"></option>
 				<option value="Inscrito">Inscrito</option>
 				<option value="No Inscrito">No inscrito</option>
 			</select>
-			<p><button id="listo">Listo</button></p>
 			<p></p>
+			<input type="button" id="aceptar" value="Aceptar">
+			<!-- <p><button id="listo">Listo</button></p> -->
+			</p>
+			<p></p>
+			</div>
 
 	<button id="cargar">Contenido</button>
 	<button id="Ajax">Cargar AJAX</button>
 	<button id="listar">Listar</button>
 	<button id="crear">Crear</button>
 	<button id="actualizar">Actualizar</button>
-	<button id="borrar">°o°</button>
-	</main>
 	<section id="contenido">
 
 	</section>
-	
-	<section id="cuadro">
 
-	</section>
-
+</div>
 	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-	<script src="code.js"></script>
+	<script src="codeT13.js"></script>
 	</body>
 	</html>
