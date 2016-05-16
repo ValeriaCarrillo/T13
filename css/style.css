@@ -1,0 +1,101 @@
+body{
+font-family: "Tahoma", "Geneva", sans-serif;
+background-color: gray;
+background-position: center;
+background-attachment: fixed;
+
+}
+
+#cuadros{
+    width: 900px;
+    margin: 70px auto;
+}
+
+#mostrar{
+  background-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  position: fixed;
+  text-align: center;
+  top: 70px;
+  width: 700px;
+  visibility: hidden;
+}
+
+#cerrar{
+  text-align: right;
+  margin-right: 8px;
+}
+
+#cerrar{
+    cursor: pointer;
+}
+
+table {
+    width: 900px;
+}
+table th {
+    color: black;
+    background-color:  #a3a375;
+    padding: 8px;
+}
+table tr td{
+    background-color: white;
+    padding: 8px;
+
+}
+
+input{
+  margin-right: 15px;
+}
+
+
+input,select {
+  font-family: "Tahoma", "Geneva", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  transition: .3s linear;
+}
+
+h1{
+    text-align: center
+}
+
+p{
+    text-align: center
+}
+
+button{
+    color: black;
+    border: 2px solid rgb(28, 147, 64);
+    background-image: url("boton.jpg");
+    border-radius: 5px;
+    margin: auto;
+    transition: .3s linear;
+}
+
+button:hover{
+  color: gray;
+  background-image: url("boton.jpg");
+  border : solid orange;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
+#mat{
+  margin-left: 50px;
+}
